@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div id="loadingScreen">
+  <div id="loadingContent">
+    <div id="loadingLogo">Quiz</div>
+    <div id="loadingText">Test Yourself</div>
+  </div>
+</div>
+
+<div id="fetchLoadingScreen" style="display: none;">
+  <div id="loadingContent">
+    <div id="loadingLogo">Quiz</div>
+    <div id="loadingText">Loading Questions...</div>
+  </div>
+</div>
+
+<div class="container mt-5" style="display: none;" id="mainContent">
+  <h1 class="text-white">Quiz Application</h1>
+  <div class="card">
+    <div class="card-header text-center">
+      <h2>Quiz App</h2>
+    </div>
+    <div class="card-body">
+      <form id="quizForm">
+        <div class="form-group">
+          <label for="userName">Enter Your Name:</label>
+          <input type="text" class="form-control" id="userName" name="userName" required>
+        </div>
+        <div class="form-group">
+          <label for="quizType">Select Quiz Type:</label>
+          <select class="form-control" id="quizType" name="quizType">
+            <option value="9">General Knowledge</option>
+            <option value="18">Computer Science</option>
+            <option value="17">Science & Nature</option>
+            <option value="19">Mathematics</option>
+            <option value="23">History</option>
+            <option value="21">Sports</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Start Quiz</button>
+      </form>
+    </div>
+  </div>
+  <div id="quizContainer" class="mt-4">
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
